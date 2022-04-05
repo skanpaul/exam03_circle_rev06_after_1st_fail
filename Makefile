@@ -5,10 +5,10 @@ CFLAG = -Wall -Wextra -Werror
 
 RM = rm -f
 
-SRC = mini_paint.CC
-OBJ = $(SRC:.c=.o)
+SRC		=	mini_paint.c
+OBJ		=	$(SRC:.c=.o)
 
-all: $(NAME)
+all:$(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAG) $(OBJ) -lm -o $(NAME)

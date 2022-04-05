@@ -73,9 +73,9 @@ int msg_error(FILE *ptr_file, int err_type)
 			write(1, "\n", 1);
 		if(ptr_file)
 			fclose(ptr_file);
-		return NO_ERROR;
 		}
 	}
+	return NO_ERROR;
 }
 //-------------------------------------------
 int pixel_status(float x, float y, t_circle *c)
